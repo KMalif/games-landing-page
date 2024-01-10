@@ -27,7 +27,7 @@ html {
 }
 
 .jumbotron {
-  background-image: url(./images/bg\ image\ 1.jpg);
+  background-image: url(./images/bg_img_section_1.jpg);
   background-size: cover;
   height: 85vh;
   text-align: center;
@@ -47,8 +47,6 @@ html {
   bottom: 0;
   z-index: -10;
 }
-
-
 
 .display-4,
 .lead {
@@ -83,7 +81,7 @@ html {
 .about-us {
   text-align: center;
   background-color: black;
-  background-image: url(./images/bg\ image\ 2.png);
+  background-image: url(./images/bg_img_section_2.png);
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -122,19 +120,19 @@ html {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(./images/scroll\ down.svg);
+  background-image: url(./images/scroll.svg);
   transform: rotate(90deg);
 }
 
 .carousel-control-next-icon {
-  background-image: url(./images/scroll\ down.svg);
+  background-image: url(./images/scroll.svg);
   transform: rotate(270deg);
 }
 
 /* FEATURES */
 .game-features {
   height: 100vh;
-  background-image: url(./images/bg\ image\ 3.png);
+  background-image: url(./images/bg_img_section_3.png);
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -172,8 +170,7 @@ html {
 #sys-req {
   height: 100vh;
   background-color: black;
-  background-image: url(./images/bg\ image\ 4.png);
-  /* background-size: cover; */
+  background-image: url(./images/bg_img_section_4.png);
   background-repeat: no-repeat;
   background-position-x: center;
   box-sizing: border-box;
@@ -240,7 +237,7 @@ td:last-child {
 #scores {
   height: 100vh;
   background-color: black;
-  background-image: url(./images/bg\ image\ 5.jpg);
+  background-image: url(./images/bg_img_section_5.jpg);
   background-size: cover;
   box-sizing: border-box;
   position: relative;
@@ -261,8 +258,6 @@ td:last-child {
   text-align: center;
   padding-bottom: 10px;
 }
-
-
 
 .testimonial {
   margin-top: 20px;
@@ -311,7 +306,7 @@ td:last-child {
   z-index: 1;
 }
 
-/* .testimonial img::after {
+.testimonial img::after {
   content: '';
   width: 60px;
   height: 60px;
@@ -320,7 +315,7 @@ td:last-child {
   z-index: 0;
   bottom: -3px;
   left: 2px;
-} */
+}
 
 .date {
   color: grey;
@@ -329,7 +324,7 @@ td:last-child {
 #subscribe {
   height: 60vh;
   background-color: #080A0B;
-  background-image: url(./images/image.png);
+  background-image: url(./images/image_statue.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 25%;
@@ -403,6 +398,7 @@ td:last-child {
   font-weight: bold;
   color: black;
   text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
 .what-so-special {
@@ -653,10 +649,6 @@ svg {
     height: 80vh;
   }
 
-  /* #subscribe::after {
-    background: radial-gradient(40% 60% at 70% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(4, 5, 6, 0.835) 40%, #080A0B 60%);
-    background-position-x: 20%;
-  } */
 
   .subscribe-content form {
     margin-top: 30px;
@@ -664,7 +656,7 @@ svg {
 
   /* footer */
   .footer {
-    height: 15vh;
+    height: 30vh;
   }
 
   .under-footer {
@@ -709,41 +701,26 @@ svg {
   svg {
     display: block;
     position: absolute;
-    /* top: 250px; */
   }
 
   #myBtn {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
+    z-index: 100;
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background-color: grey;
-    /* Set a background color */
     color: white;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 15px;
-    /* Some padding */
-    border-radius: 50%;
-    /* Rounded corners */
+    border-radius: 100px;
     font-size: 18px;
-    /* Increase font size */
   }
 
   #myBtn:hover {
     background-color: #555;
-    /* Add a dark-grey background on hover */
   }
 
 }
