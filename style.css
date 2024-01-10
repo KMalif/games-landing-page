@@ -2,6 +2,7 @@ body,
 html {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
 }
 
 .scrolled {
@@ -155,9 +156,6 @@ html {
 
 }
 
-
-
-
 #games {
   margin-top: 10%;
 }
@@ -192,6 +190,7 @@ html {
 
 #sys-req .container .what-so-special {
   text-align: center;
+  
 }
 
 #sys-req .container .sys-req-title {
@@ -214,10 +213,6 @@ td:first-child {
   border-left: none;
   border-right: 1px solid grey;
 }
-
-/* td:nth-child(1) {
-  border-top: 1px solid grey !important;
-} */
 
 td {
   border-top: 1px solid grey !important;
@@ -346,6 +341,10 @@ td:last-child {
 #subscribe .container {
   position: relative;
   z-index: 100;
+}
+::placeholder { 
+  color: #FFB548;       
+  /* Firefox, Chrome, Opera */ 
 }
 
 .footer {

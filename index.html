@@ -65,19 +65,16 @@
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav">
-                <a class="nav-link active ml-lg-3" href="#jumbotron"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-                <a class="nav-link ml-lg-3" href="#about-us">Work</a>
-                <a class="nav-link ml-lg-3" href="#game-features">Contact</a>
-                <a class="nav-link ml-lg-3" href="#sys-req">About Me</a>
+                <a class="nav-link ml-lg-3" href="#about-us">Games</a>
+                <a class="nav-link ml-lg-3" href="#game-features">Features</a>
+                <a class="nav-link ml-lg-3" href="#sys-req">Requirements</a>
+                <a class="nav-link" href="#scores">Scores</a>
               </div>
             </div>
           </div>
           <div class="col-lg d-flex">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a class="nav-link" href="#scores">Sign Up</a>
                 <a class="nav-link ml-lg-2" href="#subscribe">Login</a>
               </div>
             </div>
@@ -92,7 +89,7 @@
       <div class="container">
         <h1 class="display-4">PLAY TRADITIONAL GAME</h1>
         <p class="lead">Experience New Traditional Game</p>
-        <a href="#" class="btn btn-primary btn-lg tombol">PLAY NOW</a>
+        <a href="#" class="btn btn-lg tombol">PLAY NOW</a>
         <div class="down-arrow">
           <a href="#about-us">
             <p style="text-decoration: none; color: white">THE STORY</p>
@@ -335,7 +332,7 @@
               <p class="text-feature">
                 This top score from various games provided on this platform
               </p>
-              <a href="#" class="btn btn-primary tombol mt-lg-4">SEE MORE</a>
+              <a href="#" class="btn tombol mt-lg-4">SEE MORE</a>
             </div>
           </div>
           <div class="col-lg-7 content-center">
@@ -429,7 +426,7 @@
                   <div class="input-group mb-2">
                     <input
                       type="email"
-                      class="form-control"
+                      class="form-control input-email"
                       id="inlineFormInputGroup"
                       placeholder="youremail@youthgames.com"
                     />
@@ -439,7 +436,7 @@
                   class="col-md-6 content-center"
                   style="justify-content: stretch !important"
                 >
-                  <button type="submit" class="btn btn-primary mb-2 tombol">
+                  <button type="submit" class="btn mb-2 tombol">
                     Subscribe Now
                   </button>
                 </div>
@@ -517,7 +514,11 @@
 
         <div class="row under-footer">
           <div class="col-lg-6 copyright text-capitalize">
-            &copy; 2018 Youth Games, Inc. All Rights Reserved
+            &copy; 
+            <span id="copyright">
+              <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span> 
+            Youth Games, Inc. All Rights Reserved
           </div>
           <div class="col-lg-6 privacy-policy text-uppercase">
             <a href="#">policy</a> | <a href="#">terms of services</a> |
